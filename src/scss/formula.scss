@@ -2,5 +2,30 @@
 @import "mixins";
 
 .excel__formula {
-    
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: $toolbar-height + $header-height;
+    height: $formula-height;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+
+    .formula-info {
+        font-size: 18px;
+        text-align: center;
+        font-style: italic;
+        border-right: 1px solid $border-color;
+        min-width: $info-cell-width;
+        color: rgb(41, 41, 41);
+    }
+
+    .formula-input {
+        padding: 4px;
+        font-size: 12px;
+        outline: none;
+        height: 100%;
+        width: 100%;
+        color: #000;
+    }
 }
